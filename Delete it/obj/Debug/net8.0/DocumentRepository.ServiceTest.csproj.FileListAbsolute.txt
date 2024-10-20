@@ -1,0 +1,17 @@
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\bin\Debug\net8.0\DocumentRepository.ServiceTest.deps.json
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\bin\Debug\net8.0\DocumentRepository.ServiceTest.dll
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\bin\Debug\net8.0\DocumentRepository.ServiceTest.pdb
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\bin\Debug\net8.0\DocumentRepository.Models.dll
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\bin\Debug\net8.0\DocumentRepository.Services.dll
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\bin\Debug\net8.0\DocumentRepository.Services.pdb
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\bin\Debug\net8.0\DocumentRepository.Models.pdb
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\DocumentRepository.ServiceTest.csproj.AssemblyReference.cache
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\DocumentRepository.ServiceTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\DocumentRepository.ServiceTest.AssemblyInfoInputs.cache
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\DocumentRepository.ServiceTest.AssemblyInfo.cs
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\DocumentRepository.ServiceTest.csproj.CoreCompileInputs.cache
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\Document.F1AB424E.Up2Date
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\DocumentRepository.ServiceTest.dll
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\refint\DocumentRepository.ServiceTest.dll
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\DocumentRepository.ServiceTest.pdb
+C:\Users\parth\source\repos\DocumentRepository\DocumentRepository.ServiceTest\obj\Debug\net8.0\ref\DocumentRepository.ServiceTest.dll
