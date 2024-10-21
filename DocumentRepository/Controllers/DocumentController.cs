@@ -18,42 +18,52 @@ namespace DocumentRepository.Controllers
         [HttpGet]
         public IActionResult AddDocument()
         {
-            DocumentViewModel documentViewModel = new DocumentViewModel();
-            var documentList = _service.GetAllDocumentDetails();
-            documentViewModel.documentDetailList = documentList;
+            //throw new NotImplementedException();
+            DocumentViewModel documentViewModel = _service.GetDocumentListAsPerPagenation(1); //1 = Get the document data for the first page of pegination 
             return View(documentViewModel);
         }
 
         [HttpPost]
         public IActionResult AddDocument(DocumentViewModel document)
         {
-            if (ModelState.IsValid)
+            if (document.isUpdated == 1 && document.uploadedFile == null)
             {
-                _service.AddDocument(document);
-                return RedirectToAction("AddDocument");
+                ModelState.Remove("uploadedFile");
             }
-            else
-            {
-                document.documentDetailList = _service.GetAllDocumentDetails();
-                return View(document);
-            }
+                if (ModelState.IsValid)
+                {
+                    ViewBag.DocumentSubmitted = _service.AddDocument(document);
+                    return RedirectToAction("AddDocument");
+                }
+                else
+                {
+                    document = _service.GetDocumentListAsPerPagenation(1);
+                    return View(document);
+                }
                 
         }
 
         [HttpGet]
-        public IActionResult GetDocumentData(Guid documentID)
+        public IActionResult GetDocumentDataForEdit(Guid documentID)
         {
             return Json(_service.GetDocumentDetailByDocumentID(documentID));
 
         }
         
         [HttpPost]
-        public IActionResult UpdateDocument(DocumentViewModel documentVm)
+        public IActionResult UpdateDocumentData([FromBody] DocumentViewModel documentViewModel)
         {
-            int changesUpdated = _service.UpdateDocumentDetail(documentVm);
+            int changesUpdated = _service.UpdateDocumentDetail(documentViewModel);
             return Json(changesUpdated);
         }
 
+        [HttpGet]
+        public IActionResult getDocumentDetailListPartial(int pageIndex)
+        {
+            var documentList = _service.GetDocumentListAsPerPagenation(pageIndex);
+            return PartialView("_DocumentDetailsListView", documentList.documentDetailList);
+        }
+    
 
     }
 }

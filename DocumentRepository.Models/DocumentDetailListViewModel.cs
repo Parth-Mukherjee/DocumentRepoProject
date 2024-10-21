@@ -8,7 +8,7 @@ namespace DocumentRepository.Models
 {
     public class DocumentDetailListViewModel
     {
-        public Guid? DocumentID { get; set; }
+        public Guid? documentID { get; set; }
         public string? documentName { get; set; }
         public string? documentCode { get; set; }
         public string? fileAddress { get; set; }

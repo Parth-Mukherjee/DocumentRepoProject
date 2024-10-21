@@ -5,10 +5,11 @@ namespace DocumentRepository.Services
 {
     public interface IDocumentService
     {
-        void AddDocument(DocumentViewModel document);
-        List<DocumentDetailListViewModel> GetAllDocumentDetails();
-        string GetDocumentPathByDocumentID(Guid documentID);
+        int AddDocument(DocumentViewModel document);
         DocumentViewModel? GetDocumentDetailByDocumentID(Guid documentID);
         int UpdateDocumentDetail(DocumentViewModel documentvm);
+        DocumentViewModel GetDocumentListAsPerPagenation(int pageIndex);
+
+        
     }
 }

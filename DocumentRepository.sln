@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentRepository.Data", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentRepository.Services", "DocumentRepository.Services\DocumentRepository.Services.csproj", "{5C65CC89-FF8B-403D-983A-0553EC5475AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentRepository.ServiceTests", "DocumentRepository.ServiceTests\DocumentRepository.ServiceTests.csproj", "{CC503098-8AC3-4B8F-9CF2-6F12ED4D8BAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentRepository.Test", "DocumentRepository.Test\DocumentRepository.Test.csproj", "{979232DD-AE6C-4B6B-B0B6-55846DAF67FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{5C65CC89-FF8B-403D-983A-0553EC5475AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C65CC89-FF8B-403D-983A-0553EC5475AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C65CC89-FF8B-403D-983A-0553EC5475AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC503098-8AC3-4B8F-9CF2-6F12ED4D8BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC503098-8AC3-4B8F-9CF2-6F12ED4D8BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC503098-8AC3-4B8F-9CF2-6F12ED4D8BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC503098-8AC3-4B8F-9CF2-6F12ED4D8BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979232DD-AE6C-4B6B-B0B6-55846DAF67FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979232DD-AE6C-4B6B-B0B6-55846DAF67FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979232DD-AE6C-4B6B-B0B6-55846DAF67FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979232DD-AE6C-4B6B-B0B6-55846DAF67FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

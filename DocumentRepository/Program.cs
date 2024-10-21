@@ -1,3 +1,4 @@
+using DocumentRepository.CustomFilters;
 using DocumentRepository.Data;
 using DocumentRepository.Services;
 using Microsoft.AspNetCore.Http.Features;
@@ -7,9 +8,14 @@ using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(option => { option.UseSqlServer(builder.Configuration.GetConnectionString("DbCon")); });
 builder.Services.AddScoped<IDocumentService,DocumentService>();
+builder.Services.AddSingleton<ILogger<CustomExceptionFilter>, Logger<CustomExceptionFilter>>();
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add(typeof(CustomExceptionFilter));
+});
+
 builder.Services.Configure<FormOptions>(options =>
 {
     options.MultipartBodyLengthLimit = 104857600; // Set the input limit to 100 MB for a file (default file that allow asp.net core is 30MB)

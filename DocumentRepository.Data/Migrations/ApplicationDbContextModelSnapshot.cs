@@ -59,6 +59,29 @@ namespace DocumentRepository.Data.Migrations
 
                     b.ToTable("documentModels");
                 });
+
+            modelBuilder.Entity("DocumentRepository.Models.ErrorLogDetail", b =>
+                {
+                    b.Property<Guid>("logID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("errorLogOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("errorMessage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("errorRoute")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("errorStackTrace")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("logID");
+
+                    b.ToTable("errorLogDetails");
+                });
 #pragma warning restore 612, 618
         }
     }

@@ -36,13 +36,19 @@ namespace DocumentRepository.Models
 
 
         [DisplayName("Upload File")]
-        [FileValidation(new string[] {".xlsx",".xls",".pdf"}, 5*1024*1024)]
+        [FileValidation(new string[] {".xlsx",".xls",".pdf"}, 5*1024*1024, 0)]
         public IFormFile? uploadedFile { get; set; }
 
-        public string? FileAddress { get; set; }
+       // public string? FileAddress { get; set; }
         public List<DocumentDetailListViewModel> documentDetailList { get; set; }
 
         public string? updatedBy { get; set; }
         public DateTime? updatedOn { get; set; }
+        public int? isUpdated { get; set; }
+        public int? currentIndex { get; set; }
+        public int? pageCount { get; set; }
+//        public string? fileAddress { get; set; }
+
+
     }
 }

@@ -1,23 +1,25 @@
 ﻿@model List<DocumentDetailListViewModel>
 <div class="container mt-5">
-    <table class="table table-striped table-bordered">
-        <thead>
+    <table class="table  tablecss table-bordered">
+        <thead >
             <tr>
-                <td class="table-info FontBold">Document Name</td>
-                <td class="table-info FontBold">Document Code</td>
-                <td class="table-info FontBold">View</td>
-                <td class="table-info FontBold">Edit</td>
+                <td class="CustomNavbar">Document Name</td>
+                <td class="CustomNavbar">Document Code</td>
+                <td class="CustomNavbar">View</td>
+                <td class="CustomNavbar">Edit</td>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
-                <tr id="@item.DocumentID">
-                    <td class="table-info">@item.documentName</td>
-                    <td class="table-info">@item.documentCode</td>
-                    <td class="table-info"><a href="@item.fileAddress" download>View</a></td>
-                    <td class="table-info"><a id="editDocument" onclick="functiontest('@item.DocumentID')" href ="#">Edit</a></td>
+                <tr id="@item.documentID">
+                    <td class="tablecss">@item.documentName</td>
+                    <td>@item.documentCode</td>
+                    <td class="center-icon"><a href="@item.fileAddress" download><img src="~/icons/lsview.png" style="max-height:20px; max-width:20px;" /></a></td>
+                    <td class="center-icon1"><a id="editDocument" onclick="functiontest('@item.documentID')" href="#"><img src="~/icons/pencil.png" style="max-height:20px; max-width:20px;" /></a></td>
+                    @* <td><img src="~/icons/lsview.png" style="max-height:25px; max-width:25px;" /> *@
                 </tr>
+               
             }
         </tbody>
     </table>
